@@ -1,9 +1,39 @@
-<p>eventos works!</p>
+<h2>Eventos</h2>
+<hr />
 
-
-<div *ngFor="let evento of eventos">
-  <p><b>Tema:</b> {{evento.Tema}}</p>
-  <p><b>Local:</b> {{evento.Local}}</p>
-  <hr>
+<div class="form-inline">
+  <div class="form-group mb-2">
+    <input
+    type="text"
+    class="form-control mr-2"
+    placeholder="buscar evento..."
+    [(ngModel)]="filtroLista">
+  </div>
 </div>
+<table class="table table-striped">
+  <thead class="thead-dark">
+    <tr>
+      <th>#</th>
+      <th>Imagem</th>
+      <th>Tema</th>
+      <th>Local</th>
+      <th>Data</th>
+      <th>Qtd Participantes</th>
+      <th>Lote</th>
+      <th>Options</th>
+    </tr>
+  </thead>
 
+  <tbody>
+    <tr *ngFor="let evento of eventos">
+      <td>{{ evento.id }}</td>
+      <td><img src="assets/img/evento1.jpg" alt="{{ evento.Tema }}" width="50" /></td>
+      <td>{{ evento.Tema }}</td>
+      <td>{{ evento.Local }}</td>
+      <td>{{ evento.DataEvento | date : 'dd/MM/yyyy' }}</td>
+      <td>{{ evento.QtdPessoas }}</td>
+      <td>{{ evento.Lote }}</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>

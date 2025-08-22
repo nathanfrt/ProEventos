@@ -4,7 +4,7 @@ import {
   PLATFORM_BROWSER_ID,
   getDOM,
   setRootDomAdapter
-} from "./chunk-3OMDT4ZO.js";
+} from "./chunk-A7U4DGRH.js";
 import {
   XhrFactory,
   parseCookieValue
@@ -49,7 +49,7 @@ import {
   ɵɵdefineInjector,
   ɵɵdefineNgModule,
   ɵɵinject
-} from "./chunk-RLUATCRF.js";
+} from "./chunk-6DTO4IUW.js";
 
 // node_modules/@angular/platform-browser/fesm2022/dom_renderer.mjs
 var EVENT_MANAGER_PLUGINS = new InjectionToken(ngDevMode ? "EventManagerPlugins" : "");
@@ -1270,4 +1270,4 @@ export {
    * License: MIT
    *)
 */
-//# sourceMappingURL=chunk-DE36SCUJ.js.map
+//# sourceMappingURL=chunk-6W2AR666.js.map
